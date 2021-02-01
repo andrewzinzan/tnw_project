@@ -1,0 +1,856 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: ARS Maquette,Helvetica Neue,Arial,sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+}
+
+.nav-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 90px 1fr;
+}
+
+.nav-container-left {
+    background-image: url(assets/logo.jpg);
+    background-size: cover;
+}
+
+/*.nav-container-left img {
+    height: 80px;
+    width: 100%;
+    background-size: cover;
+}*/
+
+.nav-container ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-top {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #131313;
+}
+
+.nav-top a {
+    color: #555;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-top a:hover {
+    color: whitesmoke;
+}
+
+.top-nav-left {
+    margin-left: 15px;
+}
+
+.top-nav-left li {
+    margin-right: 10px;
+}
+
+.top-nav-right {
+    margin-right: 15px;
+}
+
+.top-nav-right li {
+    margin-left: 10px;
+}
+
+#white a{
+    color: whitesmoke;
+}
+
+.nav-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    color: 	#C0C0C0;
+    font-size: 16px;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.bottom-nav-right {
+    display: flex;
+}
+
+.search-container {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: .02px solid #DCDCDC;
+}
+
+.search-container a {
+    color: 	#C0C0C0;
+}
+
+.search-container a:hover {
+    color: #555;
+}
+
+.options-container {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: .02px solid #DCDCDC;
+}
+
+.options-container a{
+    color: #f42;
+}
+
+.bottom-nav-left {
+    margin-left: 15px;
+}
+
+.bottom-nav-left li {
+    margin-right: 10px;
+}
+
+.bottom-nav-left a{
+    color:#C0C0C0;
+    text-decoration: none;
+}
+
+.bottom-nav-left a:hover {
+    color: #383838;
+}
+
+main {
+    background-color: #F5F5F5;
+}
+
+.article-grid {
+    width: 100%;
+    height: 425px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.article {
+    position: relative;
+}
+
+#article1 {
+    height:100%;
+    width:100%;
+    border-top: 5px solid #F5F5F5;
+    border-bottom: 5px solid #F5F5F5;
+    border-left: 5px solid #F5F5F5;
+    border-right: 2.5px solid #F5F5F5;
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/coronavirus-surveillance-header-796x417.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#article2, #article3{
+    height: 50%;
+    width: 100%;
+}
+
+#article2 {
+    border-top: 5px solid #F5F5F5;
+    border-bottom: 2.5px solid #F5F5F5;
+    border-left: 2.5px solid #F5F5F5;
+    border-right: 5px solid #F5F5F5;
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-1-1-796x417.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#article3 {
+    border-top: 2.5px solid #F5F5F5;
+    border-bottom: 5px solid #F5F5F5;
+    border-left: 2.5px solid #F5F5F5;
+    border-right: 5px solid #F5F5F5;
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/1-32-796x417.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.opaic-layer {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(transparent,black);
+    opacity: 50%;
+}
+
+.logo-container {
+    height: 50%;
+    padding: 15px;
+    background: linear-gradient(to bottom, #FF0000, transparent);
+    color: whitesmoke;
+    font-size: 14px;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-container:hover {
+    opacity: 0.9;
+    transition: 0.3s;
+}
+
+#image {
+    width: 70%;
+}
+
+.logo-container p {
+    width: 300px;
+    font-weight: 300;
+    text-align: right;
+}
+
+.large-text-container {
+    color: whitesmoke;
+    padding: 20px;
+    position: absolute;
+    bottom:0;
+    left:0;
+}
+
+.large-text-container-top {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 38px;
+}
+
+.large-text-container-top a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.large-text-container-bottom ul{
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.large-text-container-bottom li {
+    margin-right: 10px;
+    color: #C0C0C0;
+}
+
+.large-text-container-bottom a {
+    text-decoration: none;
+    color: #C0C0C0;
+}
+
+#highlight:hover {
+    color: whitesmoke;
+}
+
+.large-heading {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 18px;
+}
+
+.small-text-container {
+    padding: 20px;
+    color: whitesmoke;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.small-text-container-top {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 18px;
+}
+
+.small-text-container-top a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.small-text-container-bottom ul{
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.small-text-container-bottom li {
+    margin-right: 10px;
+    color: #C0C0C0;
+}
+
+.small-text-container-bottom a{
+    color: #C0C0C0;
+    text-decoration: none;
+}
+
+.small-text-container-bottom a:hover {
+    color:whitesmoke;
+}
+
+.shares {
+    display: none;
+}
+
+.heading {
+    font-family: Helvetica;
+    font-weight: 700;
+    font-size: 28px;
+    margin-left: 10px;
+}
+
+.heading a{
+    color:#f42;
+    text-decoration: none;
+}
+
+.heading a:hover {
+    color: black;
+}
+
+.latest-news-grid {
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.grid {
+    width: 100%;
+    height: 700px;
+    margin-top: 20px;
+}
+
+.grid ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+.grid li {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1.75fr 1fr;
+    padding: 10px;
+}
+
+.news-heading {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    margin-bottom: 1px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.news-heading a {
+    color: black;
+    text-decoration: none;
+}
+
+.news-heading a:hover {
+    color: #f42;
+    text-decoration: underline;
+}
+
+.news-details {
+    display: flex;
+    color: #aaa;
+    font-size: 12px;
+    line-height: 18px;
+    padding-top: 4px;
+}
+
+.breaker {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.source a{
+    color: #aaa;
+    text-decoration: none;
+}
+
+.source a:hover {
+    color: #555;
+}
+
+.top {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+#top1 {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/WWDC-Virtual-2020-517x270.jpg);
+    background-size: cover;
+}
+
+#top2 {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/Untitled-design-25-516x270.png);
+    background-size: cover;
+}
+
+#top3 {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/GUQTk7q-405x270.jpg);
+    background-size: cover;
+}
+
+#top4 {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/solutions-not-art-design-516x270.jpg);
+    background-size: cover;
+}
+
+#top5 {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/Pinnit-hed-513x270.jpg);
+    background-size: cover;
+}
+
+#top6 {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/greta-thunberg-516x270.png);
+    background-size: cover;
+}
+
+#top7 {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-6-516x270.png);
+    background-size: cover;
+}
+
+#top8 {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/metrics-chart-gq-516x270.png);
+    background-size: cover;
+}
+
+.funds-section {
+    margin-top: 50px;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.funds-header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.funds-heading {
+    font-family: Helvetica;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.funds-heading a{
+    color: #f42;
+    text-decoration: none;
+}
+
+.funds-heading a:hover{
+    color: black;
+}
+
+.funds-options {
+    font-size: 16px;
+    margin-right: 10px;
+    height: 18px;
+}
+
+.funds-options ul{
+    display: flex;
+    align-items: bottom;
+}
+
+.funds-options li {
+    list-style: none;
+}
+
+.funds-options li a {
+    color: #f42;
+    text-decoration: none;
+}
+
+.funds-options li a:hover {
+    color: black;
+}
+
+#opt1 {
+    padding-right: 10px;
+}
+
+#opt2 {
+    padding-right: 10px;
+    padding-left: 5px;
+    border-left: 1px solid #f42;
+}
+
+#opt3 {
+    padding-left: 10px;
+    border-left: 1px solid #f42;
+}
+
+.funds-grid {
+    height: 250px;
+    width: 100%;
+}
+
+.funds-grid ul {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.funds-grid li {
+    list-style: none;
+    padding: 12px;
+}
+
+.window-container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 40% 60%;
+    grid-template-columns: none;
+    position: relative;
+}
+
+.funds-logo {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 10px;
+    top: 10px;
+}
+
+.funds-logo:hover {
+    cursor: pointer;
+}
+
+#logo1 {
+    background-image: url(assets/gauzy.jpeg);
+    background-size: cover;
+}
+
+#logo2 {
+    background-image: url(assets/frontity.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+#logo3 {
+    background-image: url(assets/oneutilitybill.png);
+    background-size: cover;
+}
+
+#logo4 {
+    background-image: url(assets/chiputility.png);
+    background-size: cover;
+}
+
+.window-top {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 40% 60%;
+    grid-template-columns: none;
+}
+
+.window-top:hover {
+    cursor: pointer;
+}
+
+.window-top-title {
+    background: #f42;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+#gauzy {
+    margin-left: 80px;
+    font-size: 16px;
+}
+
+.window-top-description {
+    display: grid;
+    align-items: center;
+    background-color:rgba(255,68,34,.08);
+}
+
+.window-top-description-text {
+    margin-left: 80px;
+}
+
+#hel {
+    font-family: Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+#rad {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+.window-bottom {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 60% 40%;
+    background-color: rgba(255,68,34,0.04);
+}
+
+.window-bottom {
+    color: black;
+    font-family: Helvetica;
+    font-weight: 500;
+}
+
+.window-bottom-top {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    border-bottom: 0.5px solid #f42;
+}
+
+#top-text {
+    line-height: 2;
+    margin-left: 10px;
+}
+
+#top-text a{
+    opacity: 0.7;
+}
+
+#top-text a:hover {
+    opacity:1;
+    cursor: pointer;
+}
+
+.window-bottom-bottom {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+#bottom-text {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+#bottom-text:hover {
+    cursor: pointer;
+}
+
+#light {
+    opacity: .5;
+}
+
+@media (min-width: 1000px) {
+    .nav-container-left {
+        display: none;
+    }
+    .nav-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 780px) {
+    .top-nav-right li {
+        display: none;
+    }
+}
+
+@media (max-width: 760px) {
+    header {
+        height: 50px;
+    }
+    .nav-top {
+        display: none;
+    }
+    .bottom-nav-left li{
+        display: none;
+    }
+    .nav-container {
+        height: 50px;
+    }
+    .nav-container-left {
+        height: 50px;
+        background-position: center;
+        transition: 0.3s;
+    }
+    .article-grid {
+        grid-template-rows: 1fr 2fr;
+        grid-template-columns: none;
+        height: 700px;
+    }
+    #article1 {
+        border-top: 5px solid #F5F5F5;
+        border-bottom: 5px solid #F5F5F5;
+        border-left: 5px solid #F5F5F5;
+        border-right: 5px solid #F5F5F5;
+    }
+    #article2 {
+        border-top: 2.5px solid #F5F5F5;
+        border-bottom: 2.5px solid #F5F5F5;
+        border-left: 5px solid #F5F5F5;
+        border-right: 5px solid #F5F5F5;
+    }
+    #article3 {
+        border-top: 2.5px solid #F5F5F5;
+        border-bottom: 5px solid #F5F5F5;
+        border-left: 5px solid #F5F5F5;
+        border-right: 5px solid #F5F5F5;
+    }
+    .large-text-container-top {
+        font-size: 18px;
+    }
+    .large-text-container, .small-text-container {
+        padding: 10px;
+    }
+    .grid ul {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 1fr);
+    }
+    .grid li {
+        grid-template-columns: 80px 6fr;
+        grid-template-rows: none;
+    }
+    .grid {
+        height: 750px;
+    }
+    .top {
+        background-position: center;
+    }
+    .bottom {
+        margin-left: 10px;
+    }
+    .funds-container {
+        height: 1000px;
+    }
+    .funds-grid {
+        margin-top: 80px;
+    }
+    .funds-options {
+        line-height: 2;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .funds-grid ul{
+        display: block;
+    }
+    .funds-grid li {
+        height: 250px;
+
+    }
+    .funds-options ul {
+        display: block;
+    }
+    #opt2 {
+        padding-right: 0;
+        padding-left: 0;
+        border-left: none;
+    }
+    #opt3 {
+        padding-right: 0;
+        padding-left: 0;
+        border-left: none;
+    }
+    .funds-options {
+    }
+}
+
+@media (min-width: 760px) {
+    .options-container {
+        display: none;
+    }
+}
+
+@media (min-width: 1025px) {
+    .article-grid {
+        height: 550px;
+    }
+    .large-text-container-top {
+        font-size: 52px;
+    }
+    .small-text-container-top {
+        font-size: 24px;
+    }
+    .shares {
+        display: initial;
+    }
+    .grid ul {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .grid {
+        height: 450px;
+    }
+}
+
+@media (max-width: 1025px) {
+    .logo-container {
+        display: none;
+    }
+    #chip {
+        display: none;
+    }
+    .funds-grid ul {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .funds-header {
+        display: block;
+        margin-bottom: 20px;
+        height: 80px;
+        position: relative;
+    }
+    .funds-options {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+@media (min-width:1050px) {
+    #dot {
+        display: none;
+    }
+}
+
+@media (max-width: 1050px) {
+    #ltd {
+        display: none;
+    }
+}
